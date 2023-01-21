@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<section class='bg-black min-h-screen grid place-content-center'>
+  <div class='grid place-items-center grid-cols-1 sm:grid-cols-2'>
+    <div class='flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end'>
+      <Icon name='logo' class='h-32' />
+      <div
+        class='bg-clip-text bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-pink-500 text-transparent text-6xl sm:text-8xl font-extrabold text-center tracking-tighter'
+      >
+        Build fast<br />websites,<br />faster.
+      </div>
+    </div>
+    <div class='w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start'>
+      <img src='/hero.avif' alt='hero image' class='object-contain animate-bounce' />
+    </div>
+  </div>
+</section>

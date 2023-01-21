@@ -19,3 +19,21 @@ const { title } = Astro.props
     <slot />
   </body>
 </html>
+
+<style is:global>
+  html {
+    color: #f9fafb;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: none;
+    }
+  }
+  .animate-bounce {
+    animation: bounce 5s infinite;
+  }
+</style>
